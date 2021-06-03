@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url('https://m.media-amazon.com/images/G/01/AMAZON_FASHION/2019/EDITORIAL/SUM1/L0/AF/IMMERSIVE_HERO/SUM1_L0_AF_Immersive-Hero._SX3000_QL85_.jpg');
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.icon-bar {
+  width: 100%;
+  background-color:gray;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 10%;
+  text-align: center;
+  padding: 9px 0;
+  transition: all 0.3s ease;
+  color:black;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color:rgb(184, 202, 252);
+}
+.active {
+  background-color: rgb(122, 235, 125);
+}
+.icon-bar .search-container {
+  float: right;
+}
+
+.icon-bar input[type=text] {
+  padding: 6px;
+  margin-top: 5px;
+  font-size: 15px;
+  border: none;
+}
+.icon-bar .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-bar .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 100px) {
+  .icon-bar .search-container {
+    float: none;
+  }
+  .icon-bar a, .icon-bar input[type=text], .icon-bar .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 15px;
+  }
+  .icon-bar input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+/* Left column */
+.leftcolumn {
+  width: 100%;
+height:200%;
+}
+
+/* Right column */
+.rightcolumn {
+  width: 100%;
+  height:200%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  height:200%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(75, 71, 71);
+  margin-top: 20px;
+}
+.footer P{
+    color:darkmagenta;
+}
+.footer P:hover{
+color:darkorange;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .icon-bar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><pre>STYLE LIFE</pre></h1>
+</div>
+
+
+<div class="icon-bar">
+        <a class="active" href="#"><i class="fa fa-home"></i></a> 
+        <a href="#"><i class="fa fa-envelope"></i></a> 
+        <a href="#"><i class="fa fa-globe"></i></a>
+        <div class="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                 <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div> 
+      </div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2><pre> COLLECTION FOR MENS</pre></h2>
+      <div class="fakeimg" style="height:500px;">
+    <img src="https://jadeblue.com/media/wysiwyg/homepage-banner/home_page_banner.jpg" height="100%" width="100%">
+    </div>
+      <h2><pre><b><i>70% off </i></b></pre></h2>
+      </div>
+    <div class="card">
+      <h2><pre> COLLECTION FOR WOMEN</pre></h2>
+      <div class="fakeimg" style="height:500px;">
+    <img src="https://ysms.akamaized.net/Assets/res/imgs/creative/19wk18/l_kr_fashion_w18_en.jpg" height="100%" width="100%">
+    </div>
+      <h2><pre><b><i>Monsoon Sale 50% OFF</i></b></pre></h2>
+       </div>
+  </div>
+ <div class="rightcolumn">
+    <div class="card">
+      <h2>TRENDING FASHION</h2>
+      <div class="fakeimg" style="height:500px;">
+   
+            <video height="100%" width="100%"  controls>
+                    <source src="https://images.harrods.com/content/the-harrods-season_couture_promo.mp4" type="video/mp4">
+                      </video> </div>
+</div>
+   <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg" style="height:500px;">
+            <img src="https://www.robertocavalli.com/BWContent/RobertoCavalli_website/Roberto_Cavalli_HP_LGcopia_6e3cac3d-3fbe-4d04-b909-dd06aa908fc0.jpg" height="100%" width="100%">
+      </div>
+    </div>
+  
+
+<div class="footer">
+  <h2><pre>CONTACT US</pre></h2>
+  <P><pre>Contact number : 999978965678</pre></P>
+</div>
+
+</body>
+</html>

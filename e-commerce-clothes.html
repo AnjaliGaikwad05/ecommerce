@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+  background-image: url('https://m.media-amazon.com/images/G/01/AMAZON_FASHION/2019/EDITORIAL/SUM1/L0/AF/IMMERSIVE_HERO/SUM1_L0_AF_Immersive-Hero._SX3000_QL85_.jpg');
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+.gallery-image {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-image img {
+  height: 250px;
+  width: 350px;
+  transform: scale(1.0);
+  transition: transform 0.4s ease;
+}
+
+.img-box {
+  box-sizing: content-box;
+  margin: 10px;
+  height: 250px;
+  width: 350px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+
+.caption {
+  position: absolute;
+  bottom: 5px;
+  left: 20px;
+  opacity: 0.0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+  height: 250px;
+  width: 350px;
+  background-color:rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img { 
+  transform: scale(1.1);
+}
+
+.img-box:hover .transparent-box {
+  background-color:rgba(0, 0, 0, 0.5);
+}
+
+.img-box:hover .caption {
+  transform: translateY(-20px);
+  opacity: 1.0;
+}
+
+.img-box:hover {
+  cursor: pointer;
+}
+
+.caption > p:nth-child(2) {
+  font-size: 0.8em;
+}
+
+.opacity-low {
+  opacity: 0.5;
+}
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgb(75, 71, 71);
+  margin-top: 20px;
+}
+.footer P{
+    color:darkmagenta;
+}
+.footer P:hover{
+color:darkorange;
+}
+</style>
+</head>
+<body>
+        <div class="header">
+                <h1><pre>STYLE LIFE</pre></h1>
+              </div>
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</div>
+<div class="gallery-image">
+    <div class="img-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR94GS6R0UuYZMjFksWUmt757kFWYulPv2aIOCa0-EghZW3mM3j" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><pre>*2 left only </pre></p>
+          <p class="opacity-low">RS. 9999 only</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://romanoriginals.cdn.rlab.net/images/extralarge/597984c4-a73c-42b7-84a4-08ff54f0e14f.jpg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><pre>*10 left only</pre></p>
+          <p class="opacity-low">RS. 6999</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd7ES5zM__ZupJUti8wQxKz6xaxmev-YQ8FSTUAWHM7tmEE29o8w" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><pre>*5left only</pre></p>
+          <p class="opacity-low">RS. 5999</p>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSH730yYC9VdAkBRS9rDkBmLiQWlPMhy6W6h8-Lz6bIGQ_EFQbV" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><pre>*10 left only </pre></p>
+          <p class="opacity-low">RS.599</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmd2zW3Ptux4dHnigNZzTCfBDdg-WzYZVOpDaEw0brntsEp_i-" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><pre>*5 left only </pre></p>
+          <p class="opacity-low">RS.1999</p>
+        </div>
+      </div> 
+    </div>
+    <div class="img-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWEmemzt9dg4H5QrEFbvv9OoQzFuRqXzN2PoYybJsUoVA5PgQWNg" alt="" />
+      <div class="transparent-box">
+        <div class="caption">
+          <p><pre>*2left only</pre></p>
+          <p class="opacity-low">RS. 2999</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="footer">
+        <h2><pre>CONTACT US : </pre></h2>
+        <P><pre>Contact number : 999978965678</pre></P>
+        <h2><pre>ADDRESS : </pre></h2>
+        <P><pre>Address : blabla blabla blabla</pre></P>
+        <h2><pre>EMAIL : </pre></h2>
+        <P><pre>Email : blablabalgmail.com</pre></P>
+      </div>
+      
+
+
+</body>
+</html>
